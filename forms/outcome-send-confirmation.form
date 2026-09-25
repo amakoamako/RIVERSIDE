@@ -1,0 +1,122 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital \u2013 Final Outcome Communication",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc001",
+        "columns": null
+      },
+      "id": "Field_osc001"
+    },
+    {
+      "text": "= patientName",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc002",
+        "columns": null
+      },
+      "id": "Field_osc002"
+    },
+    {
+      "text": "# Patient Outcome Communication",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc003",
+        "columns": null
+      },
+      "id": "Field_osc003"
+    },
+    {
+      "text": "= finalPatientOutcomeCommunication",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc004",
+        "columns": null
+      },
+      "id": "Field_osc004"
+    },
+    {
+      "text": "# GP Practice",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc005",
+        "columns": null
+      },
+      "id": "Field_osc005"
+    },
+    {
+      "text": "= gpPractice",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc006",
+        "columns": null
+      },
+      "id": "Field_osc006"
+    },
+    {
+      "text": "# Referring GP",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc007",
+        "columns": null
+      },
+      "id": "Field_osc007"
+    },
+    {
+      "text": "= referringGP",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc008",
+        "columns": null
+      },
+      "id": "Field_osc008"
+    },
+    {
+      "text": "# GP Outcome Communication",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc009",
+        "columns": null
+      },
+      "id": "Field_osc009"
+    },
+    {
+      "text": "= finalGPOutcomeCommunication",
+      "type": "text",
+      "layout": {
+        "row": "Row_osc010",
+        "columns": null
+      },
+      "id": "Field_osc010"
+    },
+    {
+      "label": "Confirmation",
+      "type": "checklist",
+      "layout": {
+        "row": "Row_osc011",
+        "columns": null
+      },
+      "id": "Field_osc011",
+      "key": "outcomeCommunicationConfirmed",
+      "validate": {
+        "required": true
+      },
+      "values": [
+        {
+          "label": "I confirm that the final outcome communication has been sent to both the Patient and GP.",
+          "value": "value"
+        }
+      ]
+    }
+  ],
+  "type": "default",
+  "id": "Form_1b9wh9h",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

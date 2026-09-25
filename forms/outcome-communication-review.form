@@ -1,0 +1,75 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital \u2013 Outcome Communication Review",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr001",
+        "columns": null
+      },
+      "id": "Field_ocr001"
+    },
+    {
+      "text": "= patientName",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr002",
+        "columns": null
+      },
+      "id": "Field_ocr002"
+    },
+    {
+      "text": "= finalClinicalOutcomeSummary",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr003",
+        "columns": null
+      },
+      "id": "Field_ocr003"
+    },
+    {
+      "text": "= clinicalPlan",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr004",
+        "columns": null
+      },
+      "id": "Field_ocr004"
+    },
+    {
+      "label": "Patient Outcome Communication",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_ocr005",
+        "columns": null
+      },
+      "id": "Field_ocr005",
+      "key": "finalPatientOutcomeCommunication",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "GP Outcome Communication",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_ocr006",
+        "columns": null
+      },
+      "id": "Field_ocr006",
+      "key": "finalGPOutcomeCommunication",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1wqtxod",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}
