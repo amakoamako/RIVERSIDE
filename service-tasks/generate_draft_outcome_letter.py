@@ -26,31 +26,43 @@ async def generate_draft_outcome_letter(
         "consultationNotes",
         "Clinical review completed."
     )
-
+    clinical_plan = variables.get(
+        "clinicalPlan",
+        "Please follow the clinical plan provided by the Specialist Doctor."
+    )
     current_date = datetime.now().strftime("%d/%m/%Y")
 
-    draft_letter = (
+    patient_draft = (
         f"Riverside Hospital\n\n"
         f"Date: {current_date}\n"
         f"Patient: {patient_name}\n\n"
         f"Clinical Outcome: {final_outcome}\n\n"
-        f"Consultation Summary:\n"
-        f"{consultation_notes}\n\n"
-        f"This is a draft clinical outcome communication "
-        f"generated automatically for review."
+        f"Consultation Summary:\n{consultation_notes}\n\n"
+        f"Clinical Plan:\n{clinical_plan}\n\n"
+        "This is a draft communication for patient review and finalisation."
+    )
+
+    gp_draft = (
+        f"Riverside Hospital – Clinical Outcome Communication\n\n"
+        f"Date: {current_date}\n"
+        f"Patient: {patient_name}\n\n"
+        f"Outcome: {final_outcome}\n\n"
+        f"Consultation Summary:\n{consultation_notes}\n\n"
+        f"Clinical Plan:\n{clinical_plan}\n\n"
+        "This is a draft communication for Medical Secretary review and finalisation."
     )
 
     result = {
-    "draftOutcomeLetter": draft_letter,
-    "finalPatientOutcomeCommunication": draft_letter,
-    "finalGPOutcomeCommunication": draft_letter,
-    "outcomeLetterGenerated": True,
-    "outcomeLetterGenerationMessage": "Draft outcome letter generated successfully",
+        "draftPatientOutcomeLetter": patient_draft,
+        "draftGPOutcomeLetter": gp_draft,
+        "outcomeLetterGenerated": True,
+        "outcomeLetterGenerationMessage": "Draft patient and GP outcome communications generated successfully.",
     }
 
-    print("\nDraft outcome letter generated:")
-    print(draft_letter)
-
+    print("\nDraft patient communication generated:")
+    print(patient_draft)
+    print("\nDraft GP communication generated:")
+    print(gp_draft)
     print("\nReturning to Camunda:")
     print(result)
     print("--------------------------------\n")

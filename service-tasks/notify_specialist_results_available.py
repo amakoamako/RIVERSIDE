@@ -19,55 +19,40 @@ async def notify_specialist_results_available(
     print("Received variables:")
     print(variables)
 
-    patient_name = str(
-        variables.get("patientName", "")
-    ).strip()
-
-    nhs_number = str(
-        variables.get("nhsNumber", "")
-    ).strip()
-
+    patient_name = str(variables.get("patientName", "")).strip()
+    nhs_number = str(variables.get("nhsNumber", "")).strip()
     lab_appointment_reference = str(
         variables.get("labAppointmentReference", "")
     ).strip()
-
-    lab_result = variables.get("laboratoryResult")
+    lab_result = variables.get("labResult")
 
     if lab_result is None or str(lab_result).strip() == "":
         raise ValueError(
             "Cannot notify specialist: labResult is missing."
         )
 
-    specialist_results_notification = (
+    notification = (
         f"Laboratory results are now available for {patient_name}"
     )
 
     if nhs_number:
-        specialist_results_notification += (
-            f" (NHS Number: {nhs_number})"
-        )
+        notification += f" (NHS Number: {nhs_number})"
 
     if lab_appointment_reference:
-        specialist_results_notification += (
-            f". Laboratory reference: "
-            f"{lab_appointment_reference}"
+        notification += (
+            f". Laboratory reference: {lab_appointment_reference}"
         )
 
-    specialist_results_notification += (
-        ". The results are ready for specialist review."
-    )
+    notification += ". The results are ready for specialist review."
 
     result = {
-        "labResultUploaded": True,
-        "specialistResultsNotification": True,
-        "specialistResultsNotification":
-            specialist_results_notification,
+        "labResultAvailable": True,
+        "specialistResultNotification": notification,
     }
 
     print("Laboratory result found.")
     print("Specialist notification generated:")
-    print(specialist_results_notification)
-
+    print(notification)
     print("Returning to Camunda:")
     print(result)
     print("--------------------------------\n")
