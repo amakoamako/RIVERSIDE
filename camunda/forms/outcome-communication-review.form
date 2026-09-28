@@ -1,0 +1,111 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital – Outcome Communication Review",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_title",
+        "columns": null
+      },
+      "id": "Field_ocr_title"
+    },
+    {
+      "text": "= patientName",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_patient",
+        "columns": null
+      },
+      "id": "Field_ocr_patient"
+    },
+    {
+      "text": "= finalClinicalOutcomeSummary",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_summary",
+        "columns": null
+      },
+      "id": "Field_ocr_summary"
+    },
+    {
+      "text": "= clinicalPlan",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_plan",
+        "columns": null
+      },
+      "id": "Field_ocr_plan"
+    },
+    {
+      "text": "## Generated Patient Draft",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_pd_label",
+        "columns": null
+      },
+      "id": "Field_ocr_pd_label"
+    },
+    {
+      "text": "= draftPatientOutcomeLetter",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_pd",
+        "columns": null
+      },
+      "id": "Field_ocr_pd"
+    },
+    {
+      "text": "## Generated GP Draft",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_gd_label",
+        "columns": null
+      },
+      "id": "Field_ocr_gd_label"
+    },
+    {
+      "text": "= draftGPOutcomeLetter",
+      "type": "text",
+      "layout": {
+        "row": "Row_ocr_gd",
+        "columns": null
+      },
+      "id": "Field_ocr_gd"
+    },
+    {
+      "label": "Patient Outcome Communication – final version",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_ocr_pf",
+        "columns": null
+      },
+      "id": "Field_ocr_pf",
+      "key": "finalPatientOutcomeCommunication",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "GP Outcome Communication – final version",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_ocr_gf",
+        "columns": null
+      },
+      "id": "Field_ocr_gf",
+      "key": "finalGPOutcomeCommunication",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1wqtxod",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

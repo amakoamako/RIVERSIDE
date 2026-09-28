@@ -1,0 +1,44 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital – Laboratory Investigation",
+      "type": "text",
+      "layout": {
+        "row": "Row_lic001",
+        "columns": null
+      },
+      "id": "Field_lic001"
+    },
+    {
+      "text": "= laboratoryTestType",
+      "type": "text",
+      "layout": {
+        "row": "Row_lic002",
+        "columns": null
+      },
+      "id": "Field_lic002"
+    },
+    {
+      "label": "Laboratory investigation completed",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_lic003",
+        "columns": null
+      },
+      "id": "Field_lic003",
+      "key": "laboratoryInvestigationCompleted",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0lwbl8l",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

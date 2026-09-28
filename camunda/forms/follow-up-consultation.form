@@ -1,0 +1,69 @@
+{
+  "components": [
+    {
+      "text": "# Schedule Follow-Up Consultation",
+      "type": "text",
+      "layout": {
+        "row": "Row_fix_title",
+        "columns": null
+      },
+      "id": "Field_fix_title"
+    },
+    {
+      "text": "Enter the follow-up consultation appointment details. These values are passed to the shared appointment-reference worker.",
+      "type": "text",
+      "layout": {
+        "row": "Row_fix_help",
+        "columns": null
+      },
+      "id": "Field_fix_help"
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Follow-Up Consultation Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_fix_date",
+        "columns": null
+      },
+      "id": "Field_fix_date",
+      "key": "nextAppointmentDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Follow-Up Consultation Time",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_fix_time",
+        "columns": null
+      },
+      "id": "Field_fix_time",
+      "key": "nextAppointmentTime",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Follow-Up Scheduling Notes",
+      "description": "Add details or scheduling instructions that should appear in the appointment confirmation.",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_fix_notes",
+        "columns": null
+      },
+      "id": "Field_fix_notes",
+      "key": "nextAppointmentNotes"
+    }
+  ],
+  "type": "default",
+  "id": "Form_1fu9c2a",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

@@ -1,0 +1,161 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital – Next Appointment Confirmation",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_title",
+        "columns": null
+      },
+      "id": "Field_na_title"
+    },
+    {
+      "text": "Use the generated appointment information below when informing the patient.",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_help",
+        "columns": null
+      },
+      "id": "Field_na_help"
+    },
+    {
+      "text": "= patientName",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_patient",
+        "columns": null
+      },
+      "id": "Field_na_patient"
+    },
+    {
+      "text": "## Appointment Type",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_type_label",
+        "columns": null
+      },
+      "id": "Field_na_type_label"
+    },
+    {
+      "text": "= finalOutcomeType",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_type",
+        "columns": null
+      },
+      "id": "Field_na_type"
+    },
+    {
+      "text": "## Appointment Reference",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_ref_label",
+        "columns": null
+      },
+      "id": "Field_na_ref_label"
+    },
+    {
+      "text": "= nextAppointmentReference",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_ref",
+        "columns": null
+      },
+      "id": "Field_na_ref"
+    },
+    {
+      "text": "## Appointment Date",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_date_label",
+        "columns": null
+      },
+      "id": "Field_na_date_label"
+    },
+    {
+      "text": "= nextAppointmentDate",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_date",
+        "columns": null
+      },
+      "id": "Field_na_date"
+    },
+    {
+      "text": "## Appointment Time",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_time_label",
+        "columns": null
+      },
+      "id": "Field_na_time_label"
+    },
+    {
+      "text": "= nextAppointmentTime",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_time",
+        "columns": null
+      },
+      "id": "Field_na_time"
+    },
+    {
+      "text": "## Confirmation Message",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_conf_label",
+        "columns": null
+      },
+      "id": "Field_na_conf_label"
+    },
+    {
+      "text": "= nextAppointmentConfirmation",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_conf",
+        "columns": null
+      },
+      "id": "Field_na_conf"
+    },
+    {
+      "text": "## Scheduling Notes",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_notes_label",
+        "columns": null
+      },
+      "id": "Field_na_notes_label"
+    },
+    {
+      "text": "= nextAppointmentNotes",
+      "type": "text",
+      "layout": {
+        "row": "Row_na_notes",
+        "columns": null
+      },
+      "id": "Field_na_notes"
+    },
+    {
+      "label": "Patient informed of next appointment",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_na_informed",
+        "columns": null
+      },
+      "id": "Field_na_informed",
+      "key": "nextAppointmentPatientInformed",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1na6k8m",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

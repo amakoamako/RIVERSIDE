@@ -1,0 +1,44 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital – Specialist Consultation",
+      "type": "text",
+      "layout": {
+        "row": "Row_cc001",
+        "columns": null
+      },
+      "id": "Field_cc001"
+    },
+    {
+      "text": "= patientName",
+      "type": "text",
+      "layout": {
+        "row": "Row_cc002",
+        "columns": null
+      },
+      "id": "Field_cc002"
+    },
+    {
+      "label": "Consultation completed",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_cc003",
+        "columns": null
+      },
+      "id": "Field_cc003",
+      "key": "consultationCompleted",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1tprm4n",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

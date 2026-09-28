@@ -1,0 +1,137 @@
+{
+  "components": [
+    {
+      "text": "# Riverside Hospital – Referral Details",
+      "type": "text",
+      "layout": {
+        "row": "Row_rdh001",
+        "columns": null
+      },
+      "id": "Field_rdh001"
+    },
+    {
+      "label": "Patient Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_rd001",
+        "columns": null
+      },
+      "id": "Field_rd001",
+      "key": "patientName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "NHS Number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_rd002",
+        "columns": null
+      },
+      "id": "Field_rd002",
+      "key": "nhsNumber",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Date of Birth",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_rd003",
+        "columns": null
+      },
+      "id": "Field_rd003",
+      "key": "dateOfBirth",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Contact Details",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_rd004",
+        "columns": null
+      },
+      "id": "Field_rd004",
+      "key": "contactDetails",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Referring GP",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_rd005",
+        "columns": null
+      },
+      "id": "Field_rd005",
+      "key": "referringGP",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "GP Practice",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_rd006",
+        "columns": null
+      },
+      "id": "Field_rd006",
+      "key": "gpPractice",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Referral Reason",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_rd007",
+        "columns": null
+      },
+      "id": "Field_rd007",
+      "key": "referralReason",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Referral Priority",
+      "values": [
+        {
+          "label": "Routine",
+          "value": "routine"
+        },
+        {
+          "label": "Urgent",
+          "value": "urgent"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_rd008",
+        "columns": null
+      },
+      "id": "Field_rd008",
+      "key": "referralPriority",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0861rxi",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}
