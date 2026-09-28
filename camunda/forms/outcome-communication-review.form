@@ -1,98 +1,62 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Outcome Communication Review",
+      "text": "# Riverside Hospital \u2013 Outcome Communication Review",
       "type": "text",
       "layout": {
-        "row": "Row_ocr_title",
+        "row": "Row_ocr001",
         "columns": null
       },
-      "id": "Field_ocr_title"
+      "id": "Field_ocr001"
     },
     {
       "text": "= patientName",
       "type": "text",
       "layout": {
-        "row": "Row_ocr_patient",
+        "row": "Row_ocr002",
         "columns": null
       },
-      "id": "Field_ocr_patient"
+      "id": "Field_ocr002"
     },
     {
       "text": "= finalClinicalOutcomeSummary",
       "type": "text",
       "layout": {
-        "row": "Row_ocr_summary",
+        "row": "Row_ocr003",
         "columns": null
       },
-      "id": "Field_ocr_summary"
+      "id": "Field_ocr003"
     },
     {
       "text": "= clinicalPlan",
       "type": "text",
       "layout": {
-        "row": "Row_ocr_plan",
+        "row": "Row_ocr004",
         "columns": null
       },
-      "id": "Field_ocr_plan"
+      "id": "Field_ocr004"
     },
     {
-      "text": "## Generated Patient Draft",
-      "type": "text",
-      "layout": {
-        "row": "Row_ocr_pd_label",
-        "columns": null
-      },
-      "id": "Field_ocr_pd_label"
-    },
-    {
-      "text": "= draftPatientOutcomeLetter",
-      "type": "text",
-      "layout": {
-        "row": "Row_ocr_pd",
-        "columns": null
-      },
-      "id": "Field_ocr_pd"
-    },
-    {
-      "text": "## Generated GP Draft",
-      "type": "text",
-      "layout": {
-        "row": "Row_ocr_gd_label",
-        "columns": null
-      },
-      "id": "Field_ocr_gd_label"
-    },
-    {
-      "text": "= draftGPOutcomeLetter",
-      "type": "text",
-      "layout": {
-        "row": "Row_ocr_gd",
-        "columns": null
-      },
-      "id": "Field_ocr_gd"
-    },
-    {
-      "label": "Patient Outcome Communication – final version",
+      "label": "Patient Outcome Communication",
       "type": "textarea",
       "layout": {
-        "row": "Row_ocr_pf",
+        "row": "Row_ocr005",
         "columns": null
       },
-      "id": "Field_ocr_pf",
+      "id": "Field_ocr005",
       "key": "finalPatientOutcomeCommunication",
       "validate": {
         "required": true
       }
     },
     {
-      "label": "GP Outcome Communication – final version",
+      "label": "GP Outcome Communication",
       "type": "textarea",
       "layout": {
-        "row": "Row_ocr_gf",
+        "row": "Row_ocr006",
         "columns": null
       },
-      "id": "Field_ocr_gf",
+      "id": "Field_ocr006",
       "key": "finalGPOutcomeCommunication",
       "validate": {
         "required": true

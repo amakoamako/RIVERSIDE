@@ -35,7 +35,7 @@ For the detailed process boundary, participants, variables, automated activities
 ```text
 models/bpmn/        Strategic and operational BPMN models
 models/i-star/      Strategic Dependency and Strategic Rationale models
-forms/              Camunda user forms used by the workflow
+camunda/forms/              Camunda user forms used by the workflow
 service-tasks/      Automated Python service-task implementations
 testing/            Test scenarios, evidence and testing report
 docs/               Supporting process and project documentation
@@ -72,7 +72,7 @@ The corresponding Python implementations are located in `service-tasks/`. The BP
 
 ## 6. Forms
 
-The `forms/` directory contains the user forms used by the operational workflow, including referral, clarification, consultation, laboratory, final outcome, next appointment and outcome communication forms.
+The `camunda/forms/` directory contains the user forms used by the operational workflow, including referral, clarification, consultation, laboratory, final outcome, next appointment and outcome communication forms.
 
 The mapping between forms and BPMN activities is documented in [`docs/process-scope-and-variables.md`](docs/process-scope-and-variables.md).
 
@@ -104,11 +104,43 @@ The project is developed incrementally using Git and GitHub. Changes to modellin
 
 ## 10. Running the Prototype
 
-The operational solution is intended to be run locally using Camunda with the BPMN process, deployed forms and Python service-task implementations available in this repository.
+The prototype is designed to run in a local Camunda environment. Detailed environment, setup and worker instructions are provided in [`docs/RUNNING.md`](docs/RUNNING.md).
 
-The service-task implementations use the Camunda Orchestration SDK and are associated with the job types configured in the BPMN model. The local Camunda environment, deployed process and worker processes should therefore be available before executing an end-to-end test scenario.
+### Environment
 
-The repository contains the implementation artefacts required to reproduce the workflow: BPMN models, forms, service-task implementations and supporting documentation.
+- Python 3.11
+- Local Camunda environment compatible with the deployed BPMN and forms
+- Camunda Orchestration SDK 9.0.1
+
+### Basic setup
+
+1. Create and activate the Python environment:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. Deploy `models/bpmn/RIVERSIDE OPERATIONAL.bpmn` to the local Camunda environment.
+
+3. Use the deployed forms from `camunda/forms/`.
+
+4. Start the required service-task worker scripts from the repository root, one per terminal as required by the pathway:
+   ```bash
+   python service-tasks/check_referral_completeness.py
+   python service-tasks/generate_appointment_reference.py
+   python service-tasks/generate_lab_appointment_reference.py
+   python service-tasks/notify_specialist_results_available.py
+   python service-tasks/generate_draft_outcome_letter.py
+   ```
+
+5. Use Camunda Tasklist to complete user tasks and Camunda Operate to inspect process execution, variables and completed process instances.
+
+### Testing
+
+End-to-end test scenarios are organised under `testing/TC01/` through `testing/TC10/`. The final testing report is stored at `testing/TESTING_REPORT_RIVERSIDE_HOSPITAL.pdf`.
+
+See [`docs/RUNNING.md`](docs/RUNNING.md) for the complete local setup and worker instructions.
 
 ## 11. Prototype Limitations
 

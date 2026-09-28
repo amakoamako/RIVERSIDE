@@ -1,152 +1,68 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Next Appointment Confirmation",
+      "text": "# Riverside Hospital \u2013 Next Appointment Confirmation",
       "type": "text",
       "layout": {
-        "row": "Row_na_title",
+        "row": "Row_nac001",
         "columns": null
       },
-      "id": "Field_na_title"
-    },
-    {
-      "text": "Use the generated appointment information below when informing the patient.",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_help",
-        "columns": null
-      },
-      "id": "Field_na_help"
+      "id": "Field_nac001"
     },
     {
       "text": "= patientName",
       "type": "text",
       "layout": {
-        "row": "Row_na_patient",
+        "row": "Row_nac002",
         "columns": null
       },
-      "id": "Field_na_patient"
-    },
-    {
-      "text": "## Appointment Type",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_type_label",
-        "columns": null
-      },
-      "id": "Field_na_type_label"
-    },
-    {
-      "text": "= finalOutcomeType",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_type",
-        "columns": null
-      },
-      "id": "Field_na_type"
-    },
-    {
-      "text": "## Appointment Reference",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_ref_label",
-        "columns": null
-      },
-      "id": "Field_na_ref_label"
-    },
-    {
-      "text": "= nextAppointmentReference",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_ref",
-        "columns": null
-      },
-      "id": "Field_na_ref"
-    },
-    {
-      "text": "## Appointment Date",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_date_label",
-        "columns": null
-      },
-      "id": "Field_na_date_label"
+      "id": "Field_nac002"
     },
     {
       "text": "= nextAppointmentDate",
       "type": "text",
       "layout": {
-        "row": "Row_na_date",
+        "row": "Row_nac003",
         "columns": null
       },
-      "id": "Field_na_date"
-    },
-    {
-      "text": "## Appointment Time",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_time_label",
-        "columns": null
-      },
-      "id": "Field_na_time_label"
+      "id": "Field_nac003"
     },
     {
       "text": "= nextAppointmentTime",
       "type": "text",
       "layout": {
-        "row": "Row_na_time",
+        "row": "Row_nac004",
         "columns": null
       },
-      "id": "Field_na_time"
-    },
-    {
-      "text": "## Confirmation Message",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_conf_label",
-        "columns": null
-      },
-      "id": "Field_na_conf_label"
-    },
-    {
-      "text": "= nextAppointmentConfirmation",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_conf",
-        "columns": null
-      },
-      "id": "Field_na_conf"
-    },
-    {
-      "text": "## Scheduling Notes",
-      "type": "text",
-      "layout": {
-        "row": "Row_na_notes_label",
-        "columns": null
-      },
-      "id": "Field_na_notes_label"
+      "id": "Field_nac004"
     },
     {
       "text": "= nextAppointmentNotes",
       "type": "text",
       "layout": {
-        "row": "Row_na_notes",
+        "row": "Row_nac005",
         "columns": null
       },
-      "id": "Field_na_notes"
+      "id": "Field_nac005"
     },
     {
-      "label": "Patient informed of next appointment",
-      "type": "checkbox",
+      "label": "Patient Informed",
+      "type": "checklist",
       "layout": {
-        "row": "Row_na_informed",
+        "row": "Row_nac006",
         "columns": null
       },
-      "id": "Field_na_informed",
+      "id": "Field_nac006",
       "key": "nextAppointmentPatientInformed",
       "validate": {
         "required": true
-      }
+      },
+      "values": [
+        {
+          "label": "I confirm the patient has been informed of the next appointment.",
+          "value": "value"
+        }
+      ]
     }
   ],
   "type": "default",

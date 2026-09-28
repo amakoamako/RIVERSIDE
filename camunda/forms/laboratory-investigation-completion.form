@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Laboratory Investigation",
+      "text": "# Riverside Hospital \u2013 Laboratory Investigation",
       "type": "text",
       "layout": {
         "row": "Row_lic001",
@@ -19,8 +19,8 @@
       "id": "Field_lic002"
     },
     {
-      "label": "Laboratory investigation completed",
-      "type": "checkbox",
+      "label": "Laboratory Investigation Completed",
+      "type": "checklist",
       "layout": {
         "row": "Row_lic003",
         "columns": null
@@ -29,7 +29,13 @@
       "key": "laboratoryInvestigationCompleted",
       "validate": {
         "required": true
-      }
+      },
+      "values": [
+        {
+          "label": "Investigation completed",
+          "value": "value"
+        }
+      ]
     }
   ],
   "type": "default",

@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Referral Clarification",
+      "text": "# Riverside Hospital \u2013 Referral Clarification",
       "type": "text",
       "layout": {
         "row": "Row_rcr001",
@@ -10,8 +10,8 @@
       "id": "Field_rcr001"
     },
     {
-      "label": "I confirm clarification has been received from the GP Practice",
-      "type": "checkbox",
+      "label": "Clarification Received",
+      "type": "checklist",
       "layout": {
         "row": "Row_rcr002",
         "columns": null
@@ -20,7 +20,13 @@
       "key": "clarificationReceived",
       "validate": {
         "required": true
-      }
+      },
+      "values": [
+        {
+          "label": "I confirm the requested clarification has been received.",
+          "value": "value"
+        }
+      ]
     }
   ],
   "type": "default",

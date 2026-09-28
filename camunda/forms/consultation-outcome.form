@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Consultation Outcome",
+      "text": "# Riverside Hospital \u2013 Consultation Outcome",
       "type": "text",
       "layout": {
         "row": "Row_co001",
@@ -37,13 +37,22 @@
     },
     {
       "label": "Laboratory Test Required",
-      "type": "checkbox",
+      "type": "checklist",
       "layout": {
         "row": "Row_co004",
         "columns": null
       },
       "id": "Field_co004",
-      "key": "labRequired"
+      "key": "labRequired",
+      "validate": {
+        "required": true
+      },
+      "values": [
+        {
+          "label": "Laboratory investigation required",
+          "value": "value"
+        }
+      ]
     },
     {
       "label": "Laboratory Test Type",
@@ -53,10 +62,7 @@
         "columns": null
       },
       "id": "Field_co005",
-      "key": "laboratoryTestType",
-      "conditional": {
-        "hide": "= labRequired = false"
-      }
+      "key": "laboratoryTestType"
     },
     {
       "label": "Laboratory Test Reason",
@@ -66,10 +72,7 @@
         "columns": null
       },
       "id": "Field_co006",
-      "key": "laboratoryTestReason",
-      "conditional": {
-        "hide": "= labRequired = false"
-      }
+      "key": "laboratoryTestReason"
     }
   ],
   "type": "default",

@@ -355,8 +355,8 @@ labAppointmentConfirmation
 ## Laboratory Investigation and Results
 
 laboratoryInvestigationCompleted
-laboratoryResultDate
-laboratoryResult
+labResultDate
+labResult
 labResultAvailable
 specialistResultNotification
 laboratoryReviewNotes
@@ -560,12 +560,12 @@ Generated laboratory appointment confirmation message.
 Boolean confirmation that the laboratory investigation has been performed.
 
 
-### laboratoryResultDate
+### labResultDate
 
 Stores the date of the laboratory result.
 
 
-### laboratoryResult
+### labResult
 
 Stores the laboratory findings/result.
 
@@ -823,8 +823,8 @@ notify-specialist-results-available
 
 Reads:
 
-laboratoryResultDate
-laboratoryResult
+labResultDate
+labResult
 laboratoryTestType
 
 Produces:
@@ -852,7 +852,7 @@ gpPractice
 consultationNotes
 consultationOutcomeSummary
 laboratoryTestType
-laboratoryResult
+labResult
 laboratoryReviewNotes
 finalClinicalOutcomeSummary
 finalOutcomeType

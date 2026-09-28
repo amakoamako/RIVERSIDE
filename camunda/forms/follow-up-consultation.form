@@ -1,59 +1,43 @@
 {
   "components": [
     {
-      "text": "# Schedule Follow-Up Consultation",
+      "text": "# Riverside Hospital \u2013 Follow-up Consultation",
       "type": "text",
       "layout": {
-        "row": "Row_fix_title",
+        "row": "Row_fuc001",
         "columns": null
       },
-      "id": "Field_fix_title"
-    },
-    {
-      "text": "Enter the follow-up consultation appointment details. These values are passed to the shared appointment-reference worker.",
-      "type": "text",
-      "layout": {
-        "row": "Row_fix_help",
-        "columns": null
-      },
-      "id": "Field_fix_help"
+      "id": "Field_fuc001"
     },
     {
       "subtype": "date",
-      "dateLabel": "Follow-Up Consultation Date",
+      "dateLabel": "Next Appointment Date",
       "type": "datetime",
       "layout": {
-        "row": "Row_fix_date",
+        "row": "Row_fuc002",
         "columns": null
       },
-      "id": "Field_fix_date",
-      "key": "nextAppointmentDate",
-      "validate": {
-        "required": true
-      }
+      "id": "Field_fuc002",
+      "key": "nextAppointmentDate"
     },
     {
-      "label": "Follow-Up Consultation Time",
+      "label": "Next Appointment Time",
       "type": "textfield",
       "layout": {
-        "row": "Row_fix_time",
+        "row": "Row_fuc003",
         "columns": null
       },
-      "id": "Field_fix_time",
-      "key": "nextAppointmentTime",
-      "validate": {
-        "required": true
-      }
+      "id": "Field_fuc003",
+      "key": "nextAppointmentTime"
     },
     {
-      "label": "Follow-Up Scheduling Notes",
-      "description": "Add details or scheduling instructions that should appear in the appointment confirmation.",
+      "label": "Appointment Notes",
       "type": "textarea",
       "layout": {
-        "row": "Row_fix_notes",
+        "row": "Row_fuc004",
         "columns": null
       },
-      "id": "Field_fix_notes",
+      "id": "Field_fuc004",
       "key": "nextAppointmentNotes"
     }
   ],

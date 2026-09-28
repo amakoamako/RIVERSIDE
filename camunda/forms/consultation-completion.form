@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Specialist Consultation",
+      "text": "# Riverside Hospital \u2013 Specialist Consultation",
       "type": "text",
       "layout": {
         "row": "Row_cc001",
@@ -19,8 +19,8 @@
       "id": "Field_cc002"
     },
     {
-      "label": "Consultation completed",
-      "type": "checkbox",
+      "label": "Consultation Completed",
+      "type": "checklist",
       "layout": {
         "row": "Row_cc003",
         "columns": null
@@ -29,7 +29,13 @@
       "key": "consultationCompleted",
       "validate": {
         "required": true
-      }
+      },
+      "values": [
+        {
+          "label": "Consultation completed",
+          "value": "value"
+        }
+      ]
     }
   ],
   "type": "default",

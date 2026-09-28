@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Riverside Hospital – Laboratory Results",
+      "text": "# Riverside Hospital \u2013 Laboratory Results",
       "type": "text",
       "layout": {
         "row": "Row_lr001",
@@ -17,15 +17,6 @@
         "columns": null
       },
       "id": "Field_lr002"
-    },
-    {
-      "text": "= labAppointmentReference",
-      "type": "text",
-      "layout": {
-        "row": "Row_lr002",
-        "columns": null
-      },
-      "id": "Field_lr002b"
     },
     {
       "subtype": "date",

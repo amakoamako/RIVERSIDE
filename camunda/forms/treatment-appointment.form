@@ -1,59 +1,43 @@
 {
   "components": [
     {
-      "text": "# Schedule Treatment Appointment",
+      "text": "# Riverside Hospital \u2013 Treatment Appointment",
       "type": "text",
       "layout": {
-        "row": "Row_fix_title",
+        "row": "Row_ta001",
         "columns": null
       },
-      "id": "Field_fix_title"
-    },
-    {
-      "text": "Enter the treatment appointment details. These values use the same appointment-variable structure required by the shared appointment-reference worker.",
-      "type": "text",
-      "layout": {
-        "row": "Row_fix_help",
-        "columns": null
-      },
-      "id": "Field_fix_help"
+      "id": "Field_ta001"
     },
     {
       "subtype": "date",
       "dateLabel": "Treatment Appointment Date",
       "type": "datetime",
       "layout": {
-        "row": "Row_fix_date",
+        "row": "Row_ta002",
         "columns": null
       },
-      "id": "Field_fix_date",
-      "key": "nextAppointmentDate",
-      "validate": {
-        "required": true
-      }
+      "id": "Field_ta002",
+      "key": "nextAppointmentDate"
     },
     {
       "label": "Treatment Appointment Time",
       "type": "textfield",
       "layout": {
-        "row": "Row_fix_time",
+        "row": "Row_ta003",
         "columns": null
       },
-      "id": "Field_fix_time",
-      "key": "nextAppointmentTime",
-      "validate": {
-        "required": true
-      }
+      "id": "Field_ta003",
+      "key": "nextAppointmentTime"
     },
     {
-      "label": "Treatment Scheduling Notes",
-      "description": "Add details or scheduling instructions that should appear in the appointment confirmation.",
+      "label": "Appointment Notes",
       "type": "textarea",
       "layout": {
-        "row": "Row_fix_notes",
+        "row": "Row_ta004",
         "columns": null
       },
-      "id": "Field_fix_notes",
+      "id": "Field_ta004",
       "key": "nextAppointmentNotes"
     }
   ],

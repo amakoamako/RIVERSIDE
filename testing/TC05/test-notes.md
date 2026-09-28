@@ -1,39 +1,57 @@
-# TC05 – Treatment Outcome Pathway
+# TC05 - Treatment Outcome Pathway
 
 ## Scenario
-A completed specialist assessment results in a treatment clinical outcome and the process follows the treatment pathway before final outcome communication.
+
+A completed specialist consultation results in a treatment clinical outcome. The process follows the treatment pathway through treatment appointment scheduling, confirmation, patient notification and final outcome communication.
 
 ## Input Data
-- Patient: Lab Test Patient
-- Clinical outcome: treatment
+
+- Patient: Test Patient 5
+- Clinical outcome: Treatment
 - Consultation outcome: Specialist consultation completed and treatment recommended.
+- Laboratory investigation required: No
 
 ## Expected Result
-Where the final clinical outcome requires treatment, the process should follow the treatment pathway, including the required treatment appointment activities, confirmation/notification activities and progression to final outcome communication.
+
+When the final clinical outcome is treatment, the process should follow the treatment pathway, including treatment outcome selection, treatment appointment scheduling, appointment confirmation, patient notification and final outcome communication.
 
 ## Actual Result
-A dedicated execution is required to demonstrate the treatment branch and capture evidence of the treatment-specific activities.
+
+The completed TC05 execution demonstrates the treatment outcome branch through treatment appointment scheduling, appointment confirmation, patient notification and final outcome communication. The completed Operate instance confirms successful completion of the treatment pathway.
 
 ## Status
-NOT YET EXECUTED
+
+PASS
 
 ## Evidence
-Evidence should demonstrate:
-1. Final outcome type decision selecting treatment
-2. Treatment appointment/task
-3. Any treatment appointment reference or confirmation
-4. Patient notification
-5. Final outcome communication
-6. Completed process instance
+
+The evidence set demonstrates:
+
+1. Referral completion and clarification handling.
+2. Final clinical outcome selection for treatment.
+3. Treatment outcome completion.
+4. Treatment appointment scheduling.
+5. Treatment appointment confirmation.
+6. Patient notification of the next appointment.
+7. Final outcome communication.
+8. Completed process instance in Operate.
+
+The completed Operate evidence is recorded in:
+
+`TC05_16_completed_operate.png`
 
 ## Defects
-Not yet assessed.
+
+No process defect was identified in the completed treatment-path execution.
 
 ## Corrective Action
-Not yet applicable.
+
+Not applicable.
 
 ## Retest
-Not yet applicable.
+
+Not applicable because the completed execution did not identify a process defect.
 
 ## Limitations
-Existing evidence in the repository demonstrates the follow-up branch but does not sufficiently demonstrate the treatment branch. A dedicated execution is therefore required.
+
+This test demonstrates the treatment outcome pathway represented by the completed execution. Additional testing of other clinical outcome branches would provide broader process coverage.
